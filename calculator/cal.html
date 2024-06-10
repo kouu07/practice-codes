@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div id="calDisplay"> 
+        <input type="text" id="display" readonly>
+        <div id="butt">
+            <button class="button" onclick="curr='';  document.querySelector('#display').value=curr;
+            ">C</button>
+            <button class="button" onclick="curr=curr+'1';  document.querySelector('#display').value=curr;
+            ">1</button>
+            <button class="button" onclick="curr=curr+'2';  document.querySelector('#display').value=curr;
+            ">2</button>
+            <button class="button" onclick="curr=curr+'+';  document.querySelector('#display').value=curr;
+            ">+</button>
+            <button class="button" onclick="curr=curr+'3';  document.querySelector('#display').value=curr;
+            ">3</button>
+            <button class="button" onclick="curr=curr+'4';  document.querySelector('#display').value=curr;
+            ">4</button>
+            <button class="button">-</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">*</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">/</button>
+
+
+            <button class="button" onclick="let result= eval(curr); curr=result; document.querySelector('#display').value=curr;">=</button>
+
+
+            <button class="button">9</button>
+            <button class="button">0</button>
+            <button class="button">.</button>
+        </div>
+    </div>
+    <script>
+        let curr='';
+        document.querySelector('#display').value=curr;
+
+    </script>
+</body>
+</html>
